@@ -424,7 +424,8 @@ export class OrientedImageLoader {
       }
 
       viewer.scene.orientedImages[0].focused = image;
-      const tmpImagePath = `${imagesPath}/thumbnails/${target.id}`;
+    	const tmpImagePath = `${Potree.resourcePath}/images/loading.jpg`;
+      //const tmpImagePath = `${imagesPath}/thumbnails/${target.id}`;
       let texture = await loadImageTexture(tmpImagePath);
       updateTexture(texture);
       setTimeout(() => {
