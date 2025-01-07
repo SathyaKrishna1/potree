@@ -29,7 +29,7 @@ export class Images360 extends EventDispatcher{
 		this.images = [];
 		this.node = new THREE.Object3D();
 		this.visibleRings=[]		
-		this.sphere = new THREE.Mesh(new THREE.SphereGeometry(1, 128, 128), new THREE.MeshBasicMaterial({side: THREE.BackSide}));
+		this.sphere = new THREE.Mesh(new THREE.SphereGeometry(1, 64, 64), new THREE.MeshBasicMaterial({side: THREE.BackSide}));
 		this.sphere.visible = false;
 		this.sphere.scale.set(-1000, 1000, 1000);
 		this.focus = this.focus.bind(this);
